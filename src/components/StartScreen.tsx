@@ -71,7 +71,7 @@ export function StartScreen({ onStart }: StartScreenProps) {
           style={{ 
             top: '60%', 
             right: '25%',
-            animation: 'gentle-sway 6s ease-in-out infinite'
+            animation: 'float-bob 7s ease-in-out infinite 1.5s'
           }}
         >
           🌊
@@ -92,7 +92,7 @@ export function StartScreen({ onStart }: StartScreenProps) {
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen p-6">
         <div className="text-center max-w-5xl w-full">
           {/* Hero title with theatrical entrance */}
-          <div style={{ animation: 'wave-swell 0.8s ease-out, scale-in 0.6s ease-out' }}>
+          <div style={{ animation: 'wave-swell 1s ease-out' }}>
             <h1 
               className="text-7xl sm:text-8xl md:text-9xl font-bold mb-4 relative"
               style={{ 
@@ -146,8 +146,7 @@ export function StartScreen({ onStart }: StartScreenProps) {
                 key={idx}
                 className="group bg-slate-800/80 backdrop-blur-sm rounded-2xl p-6 border-2 border-teal-600/50 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:border-teal-400 hover:bg-slate-700/90"
                 style={{ 
-                  animation: `fade-in-up 0.8s ease-out ${card.delay} both`,
-                  transformStyle: 'preserve-3d'
+                  animation: `fade-in-up 0.8s ease-out ${card.delay} both`
                 }}
               >
                 <div 
